@@ -17,22 +17,26 @@
 .login-left {
     width: 50%;
     padding: 40px;
+    align-items: center;
 }
 
     .login-left h1 {
         font-size: 40px;
         margin-bottom: 10px;
+        text-align: center;
     }
 
 .vmd-text {
     font-weight: bold;
     color: #5c54d4;
     font-size: 48px;
+    text-align: center;
 }
 
 .welcome-text {
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .login-form {
@@ -46,6 +50,7 @@
     }
 
     .login-form input {
+        display: inline-block;
         padding: 12px;
         margin-bottom: 16px;
         border-radius: 8px;
@@ -53,10 +58,12 @@
         background-color: #ffa8c5;
         color: #000;
         font-size: 14px;
+        box-sizing: border-box;
+        width: 400px;
     }
 
         .login-form input::placeholder {
-            color: #fff;
+            color: #808080 !important;
         }
 
 .forgot-password {
@@ -67,6 +74,7 @@
 }
 
 .login-btn {
+    display: inline-block;
     background-color: #5c54d4;
     color: white;
     padding: 12px;
@@ -74,6 +82,8 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    box-sizing: border-box;
+    width: 400px;
 }
 
 .register-text {
@@ -111,3 +121,4 @@
     text-decoration: none;
     font-weight: bold;
 }
+
