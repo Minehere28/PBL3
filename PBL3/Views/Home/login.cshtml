@@ -30,15 +30,20 @@
 
             <p class="register-text">
                 Not registered yet?
-                <a href="#">Create an account</a> <span class="signup">SignUp</span>
+                <!-- Link dẫn tới trang Register sử dụng ASP.NET MVC Tag Helper -->
+                <a asp-controller="Account" asp-action="Register">Create an account</a>
+                <span class="signup">SignUp</span>
             </p>
+
         </div>
 
         <div class="login-right">
             <img src="~/img/bank_login.png" alt=" " />
         </div>
 
-        <a href="#" class="signup-top">Sign Up</a>
+        <!-- Nút SignUp sử dụng ASP.NET MVC Tag Helper -->
+        <a asp-controller="Account" asp-action="Register" class="signup-top">Sign Up</a>
+
     </div>
 </body>
 </html>

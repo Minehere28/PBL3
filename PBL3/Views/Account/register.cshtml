@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - VMD Digibank</title>
+    <link rel="stylesheet" href="~/css/register.css" />
+</head>
+<body>
+    <div class="register-container">
+        <form asp-action="Register" method="post">
+            <h2>Đăng ký tài khoản</h2>
+
+            <label for="FullName">Họ và Tên</label>
+            <input type="text" id="FullName" name="FullName" required />
+
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" required />
+
+            <label for="Password">Password</label>
+            <input type="password" id="Password" name="Password" required />
+
+            <label for="Password">Confirm your password</label>
+            <input type="password" id="Password" name="Password" required />
+
+            <label for="DOB">Ngày Sinh</label>
+            <input type="date" id="DOB" name="DOB" required />
+
+            <label for="AccountType">Loại tài khoản</label>
+            <select id="AccountType" name="AccountType" required>
+                <option value="">-- Chọn --</option>
+                <option value="Thường">Thường</option>
+                <option value="Vay">Vay</option>
+                <option value="Tiết kiệm">Tiết kiệm</option>
+            </select>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+</body>
+</html>
